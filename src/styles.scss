@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+// Import other Styling-Files
+// ##########################
+@import './assets/fonts-icomoon/style.css';
+
+
+// Variables
+// #########
+
+:root {
+
+    // Coloring
+    // ********
+
+
+    // Sizing
+    // ******
+    --window-width: 100vw;
+    --window-height: 100vh;
+
+    --header-height: 40px;
+    --content-height: calc(var(--window-height) - var(--header-height));
+}
+
+
+// Sizing - Variables
+//
+
+
+// General Styling for the whole App
+// #################################
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: var(--primary-font-color);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(44, 80, 103, 0.6) #d3d3d3;
+}
+
+
+
