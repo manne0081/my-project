@@ -9,12 +9,7 @@ const routes: Routes = [
     { path: '',   redirectTo: 'home', pathMatch: 'full' },
     { path: 'public', component: PublicComponent },
     { path: 'login', component: LoginComponent },
-    {
-        path: 'private',
-        // alias: 'test',
-        component: PrivateComponent,
-        // canActivate: [AuthGuard]
-    },
+    { path: 'private', component: PrivateComponent },
     { path: '**', component: PublicComponent },
 ];
 
