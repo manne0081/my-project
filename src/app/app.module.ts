@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 
 import { PrivateComponent } from './private/private.component';
 import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './private/dashboard/dashboard.component';
+import { WorkspaceComponent } from './private/workspace/workspace.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +19,9 @@ import { HeaderComponent } from './header/header.component';
         PublicComponent,
         LoginComponent,
         PrivateComponent,
-        HeaderComponent
+        HeaderComponent,
+        DashboardComponent,
+        WorkspaceComponent
     ],
     imports: [
         BrowserModule,
