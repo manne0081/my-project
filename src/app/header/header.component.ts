@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
     ngClassItemDashboard: string = "header-button-bg-1";
     ngClassItemWorkspace: string = "header-button-bg-1";
     ngClassItemContacts: string = "header-button-bg-1";
+    ngClassItemDropdown: string = "header-button-bg-1";
 
     constructor(private router: Router) { }
 
@@ -30,12 +31,21 @@ export class HeaderComponent implements OnInit {
 			this.ngClassItemDashboard = "header-button-bg-1 active";
 			this.ngClassItemWorkspace = "header-button-bg-1 post-active";
             this.ngClassItemContacts = "header-button-bg-1";
+            this.ngClassItemDropdown = "header-button-bg-1";
 		}
         if (route.substring(0,18) == "/private/workspace") {
             this.ngClassItemFavorites = "header-button-bg-1";
 			this.ngClassItemDashboard = "header-button-bg-1 pre-active";
 			this.ngClassItemWorkspace = "header-button-bg-1 active";
 			this.ngClassItemContacts = "header-button-bg-1 post-active";
+            this.ngClassItemDropdown = "header-button-bg-1";
+		}
+        if (route.substring(0,17) == "/private/contacts") {
+            this.ngClassItemFavorites = "header-button-bg-1";
+			this.ngClassItemDashboard = "header-button-bg-1";
+			this.ngClassItemWorkspace = "header-button-bg-1 pre-active";
+			this.ngClassItemContacts = "header-button-bg-1 active";
+            this.ngClassItemDropdown = "header-button-bg-1 post-acitve";
 		}
     }
 }

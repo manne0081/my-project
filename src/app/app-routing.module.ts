@@ -16,6 +16,7 @@ const routes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'workspace', component: WorkspaceComponent },
+            { path: 'contacts', component: WorkspaceComponent },
         ]
     },
 

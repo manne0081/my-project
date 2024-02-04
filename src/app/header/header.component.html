@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <div [ngClass]="ngClassItemContacts">
+        <div [ngClass]="ngClassItemContacts" routerLink="/private/contacts" (click)="setClassToItem('/private/contacts')">
             <div class="header-button-bg-2">
                 <div class="header-button-wrapper full">
                     <span class="icon-handshake-o"></span>
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="header-button-bg-1">
+        <div [ngClass]="ngClassItemDropdown">
             <div class="header-button-bg-2">
                 <div class="dropdown">
                     <div class="header-button-wrapper full drop-button">
@@ -60,7 +60,6 @@
                     <div class="drop-content-container">
                         <div class="drop-content-wrapper">
                             Dropdown-Content
-
                         </div>
                     </div>
                 </div>
