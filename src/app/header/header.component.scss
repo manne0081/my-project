@@ -1,229 +1,203 @@
-/* Main Primary color */
-/* ################## */
-$color-primary-0 : #2C5067;
-$color-primary-1: #89949b;
-$color-primary-2: #666C6F;
-$color-primary-3: #18232A;
-$color-primary-4: #075384;
-
-/* Main Complement color */
-/* ##################### */
-$color-complement-0: #A1763F;
-$color-complement-1: #FCF0E2;
-$color-complement-2: #AEA79E;
-$color-complement-3: #423523;
-$color-complement-4: #CF7400;
-
-/* Old highlight color */
-/* ################### */
-$highlight-color-dark: #2c5067;
-$komplementaer-color-dark: #d3af98;
-$highlight-color-mid: #527083;
-$komplementaer-color-mid: #e6c4af;
-$highlight-color-light: #7392a5;
-$komplementaer-color-light: #f3d5c2;
-$highlight-color-lighter: #7a9db8;
-$highlight-color-lighter: #fae4d7;
-
-
-img {
-    height: 20px;
-    width: auto;
-}
-
-
-// Page Header
-// ***********
-.page-header-container {
+.header-container {
     background-color: white;
-    height: 100%;
+    width: var(--window-width);
+    height: var(--header-height);
     display: grid;
     grid-template-columns: auto auto;
     overflow: visible;
 
-    .page-header-wrapper {
-        // background-color: lime;
-        height: 100%;
+    .header-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 12px;
+        height: var(--header-height);
+        overflow: visible;
+    }
+
+    .header-wrapper.left {
         overflow: visible;
 
         .header-logo {
-            margin-right: 12px;
+            // background-color: lime;
+            height: 100%;
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
 
             img {
-                height: 28px;
+                height: 32px;
             }
         }
     }
 
-    .page-header-wrapper.wrapper-right {
-        background-attachment: orange;
+    .header-wrapper.right {
         justify-self: end;
+        padding-right: 12px;
     }
 
     .header-button-bg-1 {
-        background-color: #567385;
-        height: 34px;
-        position: relative;
-        top: 3px;
-        overflow: visible;
-    }
-
-    .header-button-bg-2 {
-        background-color: white;
-        width: 100%;
+        background-color: var(--primary-background-1);
         height: 100%;
         overflow: visible;
-    }
-
-    .header-button-bg-3 {
-        background-color: rgb(235, 235, 235);
-        border: 1px solid rgb(220, 220, 220);
-        border-radius: 6px;
-        padding: 4px 6px;
-    }
-
-    .header-button-bg-1.active {
-        border-radius: 8px 8px 0 0;
 
         .header-button-bg-2 {
-            margin-top: 1px;
-        }
-    }
+            background-color: white;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            overflow: visible;
 
-    .header-button-bg-1.pre-active .header-button-bg-2 {
-        border-radius: 0 0 8px 0;
-        padding: 0px 6px;
-    }
-
-    .header-button-bg-1.active .header-button-bg-2 {
-        background-color: transparent;
-        padding: 0px 6px;
-    }
-
-    .header-button-bg-1.post-active .header-button-bg-2 {
-        border-radius: 0 0 0 8px;
-        padding: 0px 6px;
-    }
-
-    .header-button-bg-1.active .header-button-bg-3 {
-        background-color: transparent;
-        border: none;
-        color: white;
-    }
-
-
-    // MENU - HOVER-EFFECTS
-    .header-button-bg-3:hover {
-        background-color: $color-primary-1;
-        cursor: pointer;
-        color: white;
-    }
-
-
-    // MENU - DROPDOWN-TEST
-    .header-dropdown-bg-3 {
-        padding-right: 6px;
-    }
-
-    .header-dropdown-button {
-        background-color: rgb(235, 235, 235);
-        border: 1px solid rgb(220, 220, 220);
-        border-radius: 6px;
-        padding: 4px 6px;
-        position: relative;
-        transition: background-color .2s;
-        transition: border .1s;
-    }
-
-    .header-dropdown-content-wrapper {
-        background-color: transparent;
-        border: none;
-        padding-top: 2px;
-        border-radius: 8px;
-        min-width: 300px;
-        position: absolute;
-        z-index: 100;
-        display: none;
-
-        .header-dropdown-content {
-            background-color: $color-primary-2;
-            border: 1px solid $color-primary-0;
-            border-radius: 8px;
-            padding: 12px 12px;
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            gap: 8px;
-
-            .sub-menu-button-container {
-                background-color: $color-complement-2;
-                border: 1px solid $color-primary-2;
+            .header-button-wrapper {
+                background-color: rgba(44, 80, 103, 0.2);
+                border: 1px solid rgba(44, 80, 103, 0.12);
                 border-radius: 6px;
-                min-width: 80px;
-                min-height: 60px;
+                height: 28px;
+                min-width: 28px;
+                margin: 0 3px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+
+                transition: background-color .2s;
+                transition: border .2s;
+
+                [class*="icon"] {
+                    font-size: 1.4em;
+                }
+            }
+
+            .header-button-wrapper:hover {
+                background-color: rgba(44, 80, 103, 0.6);
+                border: 1px solid rgba(44, 80, 103, 0.4);
+                cursor: pointer;
+
+                span {
+                    color: white;
+                }
+            }
+
+            .header-button-wrapper.full {
+                padding: 0 8px;
+
+                [class*="icon"] {
+                    margin-right: 6px;
+                }
+
+                [class*="icon-end"] {
+                    margin-left: 6px;
+                    margin-right: 0;
+                }
+
+                span.button-value {
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+
+        .dropdown {
+            // background-color: yellow;
+            position: relative;
+            overflow: visible;
+
+            .drop-button {
+                // background-color: orange;
+            }
+
+            .drop-content-container {
+                background-color: transparent;
+                position: absolute;
+                left: 3px;
+                padding-top: 3px;
+                z-index: 100;
+                display: none;
+
+                .drop-content-wrapper {
+                    background-color: white;
+                    border: 1px solid rgba(44, 80, 103, 0.6);
+                    border-radius: 6px;
+                    padding: 6px 8px;
+                    min-width: 250px;
+                    min-height: 300px;
+                }
+            }
+        }
+
+        .dropdown:hover .drop-content-container {
+            display: block;
+        }
+
+
+
+        .dropdown:hover .header-button-wrapper.full.drop-button {
+            background-color: rgba(44, 80, 103, 0.6);
+            border: 1px solid rgba(44, 80, 103, 0.4);
+
+            span {
                 color: white;
             }
+        }
 
-            .sub-menu-button-container:hover {
-                background-color: $color-complement-3;
-                border: 1px solid $color-complement-2;
-                cursor: pointer;
+
+    }
+
+    // Header-Button (PRE-ACTIVE)
+    // **************************
+    .header-button-bg-1.pre-active {
+        .header-button-bg-2 {
+            border-radius: 0 0 8px 0;
+
+            .header-button-wrapper {
+                margin: 0 6px 0 3px;
             }
-
         }
     }
 
-    .header-dropdown-button:hover {
-        background-color: $color-primary-1;
-        padding: 4px 6px;
-        color: white;
-        cursor: default;
+    // Header-Button (ACTIVE)
+    // **********************
+    .header-button-bg-1.active {
+        position: relative;
+        top: 6px;
+        border-radius: 8px 8px 0 0;
 
-        span {
-            color: white;
+        .header-button-bg-2 {
+            background-color: transparent;
+
+            .header-button-wrapper {
+                background-color: transparent;
+                border: none;
+                position: relative;
+                top: -5px;
+
+                span {
+                    color: white;
+                }
+            }
         }
     }
 
-    .header-dropdown-bg-3:hover .header-dropdown-content-wrapper {
-        display: block;
-    }
+    // Header-Button (POST-ACTIVE)
+    // **************************
+    .header-button-bg-1.post-active {
+        .header-button-bg-2 {
+            border-radius: 0 0 0 8px;
 
-    .header-dropdown-bg-3:hover .header-dropdown-button {
-        background-color: $color-primary-1;
-        border: 1px solid $color-primary-1;
-        color: white;
-
-        span {
-            color: white;
+            .header-button-wrapper {
+                margin: 0 3px 0 6px;
+            }
         }
     }
 
 
 
-    .test4 {
-        background-color: $color-complement-2;
-        border: 1px solid $komplementaer-color-light;
-        width: 32px;
-        height: 32px;
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
 
-    .test4:hover {
-        background-color: $highlight-color-mid;
-        border: 1px solid $highlight-color-mid;
-        cursor: pointer;
 
-        span {
-            color: white;
-        }
-    }
+
+
+
+
+
+
+
+
 }

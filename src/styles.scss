@@ -10,6 +10,7 @@
 
     // Coloring
     // ********
+    --primary-background-1: #567385;
     --primary-font-color: #4f4f4f;
     --font-color-locked: #b3b3b3;
 
@@ -42,5 +43,7 @@
     scrollbar-color: rgba(44, 80, 103, 0.6) #d3d3d3;
 }
 
-
-
+img.height-20 {
+    height: 20px;
+    width: auto;
+}
