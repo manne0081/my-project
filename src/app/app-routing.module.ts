@@ -7,6 +7,7 @@ import { PrivateComponent } from './private/private.component';
 
 import { DashboardComponent } from './private/dashboard/dashboard.component';
 import { WorkspaceComponent } from './private/workspace/workspace.component';
+import { ContactsComponent } from './private/contacts/contacts.component';
 
 const routes: Routes = [
     { path: '',   redirectTo: 'home', pathMatch: 'full' },
@@ -16,7 +17,7 @@ const routes: Routes = [
         children: [
             { path: 'dashboard', component: DashboardComponent },
             { path: 'workspace', component: WorkspaceComponent },
-            { path: 'contacts', component: WorkspaceComponent },
+            { path: 'contacts', component: ContactsComponent },
         ]
     },
 

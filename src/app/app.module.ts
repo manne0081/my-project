@@ -12,6 +12,7 @@ import { PrivateComponent } from './private/private.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './private/dashboard/dashboard.component';
 import { WorkspaceComponent } from './private/workspace/workspace.component';
+import { ContactsComponent } from './private/contacts/contacts.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { WorkspaceComponent } from './private/workspace/workspace.component';
         PrivateComponent,
         HeaderComponent,
         DashboardComponent,
-        WorkspaceComponent
+        WorkspaceComponent,
+        ContactsComponent
     ],
     imports: [
         BrowserModule,

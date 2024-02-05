@@ -70,7 +70,9 @@
                     </div>
                     <div class="drop-content-container">
                         <div class="drop-content-wrapper">
-                            Dropdown-Kontakte
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/contacts')">
+                                Kontakte
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +82,8 @@
         <!-- PLACEHOLDER - ELEMENT -->
         <!-- ********************* -->
         <div [ngClass]="ngClassItemPlaceholder">
-            <div class="header-button-bg-2">
+            <div class="header-button-bg-2" style="width: 8px;">
+                &nbsp;
             </div>
         </div>
 
