@@ -2,12 +2,14 @@
 
     <div class="header-wrapper left">
 
+        <!-- LOGO -->
+        <!-- **** -->
         <div class="header-logo">
-            <img src="../../assets/images/logo-design-49570.png" alt="">
+            <img src="../../assets/images/logo-design-49570.png" alt="" routerLink="/private/dashboard" (click)="setClassToItem('/private/dashboard')">
         </div>
 
-        <!-- Suche, Favorites, Dashboard, Workspace, Kontakte -->
-
+        <!-- SEARCHING - DROPDOWN -->
+        <!-- ******************** -->
         <div class="header-button-bg-1">
             <div class="header-button-bg-2">
                 <div class="header-button-wrapper" style="margin-left: 0px;">
@@ -16,6 +18,8 @@
             </div>
         </div>
 
+        <!-- FAVORITES - DROPDOWN -->
+        <!-- ******************** -->
         <div [ngClass]="ngClassItemFavorites">
             <div class="header-button-bg-2">
                 <div class="header-button-wrapper">
@@ -24,33 +28,66 @@
             </div>
         </div>
 
+        <!-- MENU ITEM - DASHBOARD -->
+        <!-- ********************* -->
         <div [ngClass]="ngClassItemDashboard" routerLink="/private/dashboard" (click)="setClassToItem('/private/dashboard')">
             <div class="header-button-bg-2">
-                <div class="header-button-wrapper">
+                <div class="header-button-wrapper full">
                     <span class="icon-grid"></span>
+                    <span class="button-value">Dashboard</span>
                 </div>
             </div>
         </div>
 
-        <div [ngClass]="ngClassItemWorkspace" routerLink="/private/workspace" (click)="setClassToItem('/private/workspace')">
+        <!-- MENU ITEM - WORKSPACE -->
+        <!-- ********************* -->
+        <div [ngClass]="ngClassItemWorkspace">
             <div class="header-button-bg-2">
-                <div class="header-button-wrapper full">
-                    <span class="icon-pencilwrench"></span>
-                    <span class="button-value">Workspace</span>
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-pencilwrench"></span>
+                        <span class="button-value">Workspace</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/workspace" (click)="setClassToItem('/private/workspace')">
+                                Workspace
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div [ngClass]="ngClassItemContacts" routerLink="/private/contacts" (click)="setClassToItem('/private/contacts')">
+        <!-- MENU ITEM - CONTACTS -->
+        <!-- ******************** -->
+        <div [ngClass]="ngClassItemContacts">
             <div class="header-button-bg-2">
-                <div class="header-button-wrapper full">
-                    <span class="icon-handshake-o"></span>
-                    <span class="button-value">Kontakte</span>
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-handshake-o"></span>
+                        <span class="button-value">Kontakte</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            Dropdown-Kontakte
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div [ngClass]="ngClassItemDropdown">
+        <!-- PLACEHOLDER - ELEMENT -->
+        <!-- ********************* -->
+        <div [ngClass]="ngClassItemPlaceholder">
+            <div class="header-button-bg-2">
+            </div>
+        </div>
+
+
+        <!-- DROPDOWN - EXAMPLE -->
+        <!-- ****************** -->
+        <!-- <div [ngClass]="ngClassItemDropdown">
             <div class="header-button-bg-2">
                 <div class="dropdown">
                     <div class="header-button-wrapper full drop-button">
@@ -64,7 +101,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
 
     </div>
 
