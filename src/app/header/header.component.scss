@@ -121,15 +121,21 @@
                     border: 1px solid rgba(44, 80, 103, 0.6);
                     border-radius: 6px;
                     padding: 6px 8px;
-                    min-width: 250px;
-                    min-height: 300px;
+                    min-width: 300px;
+                    // min-height: 500px;
 
                     .submenu-button {
                         background-color: rgb(223, 223, 223);
                         border: 1px solid rgb(184, 184, 184);
                         border-radius: 6px;
                         padding: 10px 16px;
+                        margin: 3px;
                         cursor: pointer;
+                    }
+
+                    .submenu-button:hover {
+                        background-color: rgba(44, 80, 103, 0.3);
+                        border: 1px solid rgba(44, 80, 103, 0.2);
                     }
                 }
             }
@@ -142,6 +148,7 @@
         .dropdown:hover .header-button-wrapper.full.drop-button {
             background-color: rgba(44, 80, 103, 0.6);
             border: 1px solid rgba(44, 80, 103, 0.4);
+            cursor: default;
 
             span {
                 color: white;
@@ -212,17 +219,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -50,8 +50,17 @@
                     </div>
                     <div class="drop-content-container">
                         <div class="drop-content-wrapper">
-                            <button class="submenu-button" routerLink="/private/workspace" (click)="setClassToItem('/private/workspace')">
-                                Workspace
+                            <button class="submenu-button" routerLink="/private/tasks" (click)="setClassToItem('/private/workspace')">
+                                Aufgaben
+                            </button>
+                            <button class="submenu-button" routerLink="/private/planner" (click)="setClassToItem('/private/workspace')">
+                                Planner
+                            </button>
+                            <button class="submenu-button" routerLink="/private/campagne" (click)="setClassToItem('/private/workspace')">
+                                Kampagnen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/email" (click)="setClassToItem('/private/workspace')">
+                                E-Mail
                             </button>
                         </div>
                     </div>
@@ -70,8 +79,29 @@
                     </div>
                     <div class="drop-content-container">
                         <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/contacts')">
+                                Unternehmen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/contacts')">
+                                Lieferanten
+                            </button>
                             <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/contacts')">
-                                Kontakte
+                                Ansprechpartner
+                            </button>
+                            <button class="submenu-button" routerLink="/private/user" (click)="setClassToItem('/private/contacts')">
+                                Benutzer
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/contacts')">
+                                Modulberechtigungen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/information-groups" (click)="setClassToItem('/private/contacts')">
+                                Informationsgruppen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/debitor-data" (click)="setClassToItem('/private/contacts')">
+                                Debitor Daten
+                            </button>
+                            <button class="submenu-button" routerLink="/private/addresses" (click)="setClassToItem('/private/contacts')">
+                                Adressen
                             </button>
                         </div>
                     </div>
