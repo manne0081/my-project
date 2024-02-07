@@ -122,7 +122,8 @@
                     border-radius: 6px;
                     padding: 6px 8px;
                     min-width: 300px;
-                    // min-height: 500px;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
 
                     .submenu-button {
                         background-color: rgb(223, 223, 223);
@@ -130,6 +131,10 @@
                         border-radius: 6px;
                         padding: 10px 16px;
                         margin: 3px;
+                        width: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
                         cursor: pointer;
                     }
 
