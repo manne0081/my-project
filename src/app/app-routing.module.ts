@@ -27,10 +27,14 @@ const routes: Routes = [
     { path: 'private', component: PrivateComponent,
         children: [
             { path: 'dashboard', component: DashboardComponent },
+            // Workspace
+            // ---------
             { path: 'tasks', component: TasksComponent },
             { path: 'planner', component: PlannerComponent },
             { path: 'campagne', component: CampagneComponent },
             { path: 'email', component: EmailComponent },
+            // Contacts
+            // --------
             { path: 'company', component: CompanyComponent },
             { path: 'suppliers', component: SuppliersComponent },
             { path: 'contacts', component: ContactsComponent },
@@ -39,6 +43,24 @@ const routes: Routes = [
             { path: 'information-groups', component: InformationGroupsComponent },
             { path: 'debitor-data', component: DebitorDataComponent },
             { path: 'addresses', component: AddressesComponent },
+            // Sales Process
+            // -------------
+            { path: 'sales-process', component: AddressesComponent },
+            // Order Processing
+            // ----------------
+            { path: 'order-processing', component: AddressesComponent },
+            // Accounting
+            // ----------
+            { path: 'accounting', component: AddressesComponent },
+            // Product Management
+            // ------------------
+            { path: 'product-management', component: AddressesComponent },
+            // Contract Management
+            // -------------------
+            { path: 'contract-management', component: AddressesComponent },
+            // Tools & Assets
+            // --------------
+            { path: 'tools', component: AddressesComponent },
         ]
     },
 

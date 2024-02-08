@@ -74,7 +74,7 @@
             <div class="header-button-bg-2">
                 <div class="dropdown">
                     <div class="header-button-wrapper full drop-button">
-                        <span class="icon-handshake-o"></span>
+                        <span class="icon-group"></span>
                         <span class="button-value">Kontakte</span>
                     </div>
                     <div class="drop-content-container">
@@ -109,6 +109,200 @@
             </div>
         </div>
 
+        <!-- MENU ITEM - SALES PROCESS -->
+        <!-- ************************* -->
+        <div [ngClass]="ngClassItemSalesProcess">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-handshake-o"></span>
+                        <span class="button-value">Vorgänge & Belege</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/sales-process')">
+                                Verkaufsvorgänge
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/sales-process')">
+                                Angebote
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/sales-process')">
+                                Aufträge
+                            </button>
+                            <button class="submenu-button" routerLink="/private/user" (click)="setClassToItem('/private/sales-process')">
+                                Rechnungen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/sales-process')">
+                                Teilaufträge
+                            </button>
+                            <button class="submenu-button" routerLink="/private/information-groups" (click)="setClassToItem('/private/sales-process')">
+                                Alle Belege
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU ITEM - ORDER PROCESSING -->
+        <!-- **************************** -->
+        <div [ngClass]="ngClassItemOrderProcessing">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-paperplane"></span>
+                        <span class="button-value">Auftragsabwicklung</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/order-processing')">
+                                Multipostings
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/order-processing')">
+                                Postings
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/order-processing')">
+                                Stellenanzeigen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/user" (click)="setClassToItem('/private/order-processing')">
+                                Print
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/order-processing')">
+                                Dienstleistungen & Sonstiges
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU ITEM - ACCOUNTING -->
+        <!-- ********************** -->
+        <div [ngClass]="ngClassItemAccounting">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-coins"></span>
+                        <span class="button-value">Rechnungswesen</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/accounting')">
+                                Ausgangsrechnungen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/accounting')">
+                                Rechnungspositions- gruppen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/accounting')">
+                                Auftragspositionen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/user" (click)="setClassToItem('/private/accounting')">
+                                Belegs-PDFs
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/accounting')">
+                                Eingangsrechnungen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU ITEM - PRODUCT MANAGEMENT -->
+        <!-- ****************************** -->
+        <div [ngClass]="ngClassItemProductManagement">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-cubes"></span>
+                        <span class="button-value">Produktverwaltung</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/product-management')">
+                                Produkte
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/product-management')">
+                                Produktvarianten
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/product-management')">
+                                Produktgruppen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/user" (click)="setClassToItem('/private/product-management')">
+                                PGV-Gruppen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/product-management')">
+                                Positionsvorlagen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/product-management')">
+                                Übertragungswege
+                            </button>
+                            <button class="submenu-button" routerLink="/private/modul-permissions" (click)="setClassToItem('/private/product-management')">
+                                Zusatzangaben
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU ITEM - Contract Management -->
+        <!-- ******************************* -->
+        <div [ngClass]="ngClassItemContractManagement">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-medal"></span>
+                        <span class="button-value">Vertragswesen</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/contract-management')">
+                                Kundenverträge
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/contract-management')">
+                                Lieferantenverträge
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/contract-management')">
+                                Partner-Konfigurationen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU ITEM - Tools & Assets -->
+        <!-- ************************** -->
+        <div [ngClass]="ngClassItemTools">
+            <div class="header-button-bg-2">
+                <div class="dropdown">
+                    <div class="header-button-wrapper full drop-button">
+                        <span class="icon-tools"></span>
+                        <span class="button-value">Tools & Assets</span>
+                    </div>
+                    <div class="drop-content-container">
+                        <div class="drop-content-wrapper">
+                            <button class="submenu-button" routerLink="/private/company" (click)="setClassToItem('/private/tools')">
+                                Smart-Templates
+                            </button>
+                            <button class="submenu-button" routerLink="/private/suppliers" (click)="setClassToItem('/private/tools')">
+                                Bewerbungsformulare
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/tools')">
+                                Schnittstellen
+                            </button>
+                            <button class="submenu-button" routerLink="/private/contacts" (click)="setClassToItem('/private/tools')">
+                                Global Fonts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- PLACEHOLDER - ELEMENT -->
         <!-- ********************* -->
         <div [ngClass]="ngClassItemPlaceholder">
@@ -116,7 +310,6 @@
                 &nbsp;
             </div>
         </div>
-
 
         <!-- DROPDOWN - EXAMPLE -->
         <!-- ****************** -->
@@ -135,8 +328,6 @@
                 </div>
             </div>
         </div> -->
-
-
 
     </div>
 
